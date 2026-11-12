@@ -11,14 +11,8 @@ import { AuthService } from '../../core/services/auth.service';
   template: `
     <div class="min-h-screen bg-[#0b192c] flex items-center justify-center p-4">
       <div class="w-full max-w-md bg-white rounded-2xl shadow-2xl overflow-hidden">
-        <div class="p-6 bg-[#102542] text-white border-b border-white/10">
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-lg bg-blue-600 flex items-center justify-center font-extrabold">SEI</div>
-            <div>
-              <h1 class="text-lg font-bold">Sarkari Exam Intelligence</h1>
-              <p class="text-xs text-blue-200">Verified Government Exam & Eligibility Tracker</p>
-            </div>
-          </div>
+        <div class="px-6 pt-5 pb-4 bg-white border-b border-slate-200 text-center">
+          <img src="/logo.png" alt="Sarkari Exam Intelligence" class="h-28 w-auto mx-auto object-contain" />
         </div>
 
         <form (ngSubmit)="submit()" class="p-6 space-y-4">

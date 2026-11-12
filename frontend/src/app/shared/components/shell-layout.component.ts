@@ -30,17 +30,11 @@ interface NavItem {
         class="fixed lg:static inset-y-0 left-0 z-40 w-64 bg-[#0b192c] text-slate-100 flex flex-col transition-transform duration-200 lg:translate-x-0 shrink-0 shadow-xl">
 
         <!-- Brand -->
-        <div class="px-5 py-4 border-b border-white/10 flex items-center justify-between">
-          <a routerLink="/dashboard" class="flex items-center gap-2.5">
-            <div class="w-9 h-9 rounded-lg bg-blue-600 flex items-center justify-center font-extrabold text-white text-sm shadow">
-              SEI
-            </div>
-            <div>
-              <div class="font-bold text-sm tracking-tight text-white leading-tight">Sarkari Exam</div>
-              <div class="text-[11px] text-blue-300 font-medium">Intelligence Platform</div>
-            </div>
+        <div class="px-4 py-3.5 border-b border-white/10 flex items-center justify-between gap-2">
+          <a routerLink="/dashboard" class="flex-1 bg-white rounded-xl px-2.5 py-2 shadow-sm hover:shadow transition flex items-center justify-center">
+            <img src="/logo.png" alt="Sarkari Exam Intelligence" class="w-full max-h-20 object-contain" />
           </a>
-          <button (click)="mobileMenuOpen.set(false)" class="lg:hidden text-slate-300 hover:text-white text-xl leading-none">
+          <button (click)="mobileMenuOpen.set(false)" class="lg:hidden text-slate-300 hover:text-white text-xl leading-none px-1">
             &times;
           </button>
         </div>

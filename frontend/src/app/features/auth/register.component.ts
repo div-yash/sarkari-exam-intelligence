@@ -11,11 +11,16 @@ import { AuthService } from '../../core/services/auth.service';
   template: `
     <div class="min-h-screen bg-[#0b192c] py-8 px-4 flex items-center justify-center">
       <div class="w-full max-w-3xl bg-white rounded-2xl shadow-2xl overflow-hidden">
-        <div class="p-6 bg-[#102542] text-white border-b border-white/10">
-          <h1 class="text-xl font-bold">Candidate Registration & Eligibility Profile</h1>
-          <p class="text-xs text-blue-200 mt-1">
-            Supports all Indian graduates across states, categories, branches & experience levels.
-          </p>
+        <div class="p-6 bg-[#102542] text-white border-b border-white/10 flex flex-col sm:flex-row sm:items-center gap-4">
+          <div class="bg-white rounded-xl px-3 py-1.5 shadow-sm shrink-0 self-start sm:self-auto">
+            <img src="/logo.png" alt="Sarkari Exam Intelligence" class="h-14 w-auto object-contain" />
+          </div>
+          <div>
+            <h1 class="text-xl font-bold">Candidate Registration & Eligibility Profile</h1>
+            <p class="text-xs text-blue-200 mt-1">
+              Supports all Indian graduates across states, categories, branches & experience levels.
+            </p>
+          </div>
         </div>
 
         <form (ngSubmit)="submit()" class="p-6 space-y-6">
