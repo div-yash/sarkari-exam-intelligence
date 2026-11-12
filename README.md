@@ -15,14 +15,11 @@ A full-stack Indian Government Exam discovery, eligibility verification, deadlin
 
 ---
 
-## Seeded Accounts & Sign-In
+## Account Access & Registration
 
-You can register your own candidate profile at `/auth/register` or sign in directly using the two seeded accounts (also available as one-click buttons on the login page):
-
-| Role | Email | Password | Profile Details |
-|---|---|---|---|
-| **Candidate** | `candidate@sarkariexam.in` | `Candidate@12345` | B.Tech Information Technology, Bihar Domicile, OBC-NCL, 36 months IT work experience |
-| **Admin** | `admin@sarkariexam.in` | `Admin@12345` | System Admin & Verification Console access + Candidate profile |
+* **New Users:** Register your own candidate eligibility profile at `/auth/register`, or explore the exam catalog via **Browse as Guest** (`/dashboard`).
+* **Demo Candidate Profile (Optional Local/Evaluation Use):** `candidate@sarkariexam.in` / `Candidate@12345` (B.Tech Information Technology, Bihar Domicile, OBC-NCL).
+* **System Admin Access:** Managed privately via ASP.NET Core Identity (`Admin` role). Change any default seeded credentials immediately in production databases.
 
 ---
 

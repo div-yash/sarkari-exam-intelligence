@@ -47,24 +47,7 @@ import { AuthService } from '../../core/services/auth.service';
             {{ loading() ? 'Signing in...' : 'Sign In' }}
           </button>
 
-          <!-- Quick Credential Helpers for Demo Evaluation -->
-          <div class="pt-3 border-t border-slate-200">
-            <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider mb-2">Seeded Evaluation Accounts</div>
-            <div class="grid grid-cols-2 gap-2">
-              <button type="button" (click)="fillDemo('candidate@sarkariexam.in', 'Candidate@12345')"
-                class="p-2 text-left rounded-lg border border-slate-200 hover:border-blue-400 hover:bg-blue-50/50 transition">
-                <div class="text-xs font-bold text-slate-800">B.Tech IT (Bihar)</div>
-                <div class="text-[11px] text-slate-500">Candidate Profile</div>
-              </button>
-              <button type="button" (click)="fillDemo('admin@sarkariexam.in', 'Admin@12345')"
-                class="p-2 text-left rounded-lg border border-slate-200 hover:border-amber-400 hover:bg-amber-50/50 transition">
-                <div class="text-xs font-bold text-slate-800">System Admin</div>
-                <div class="text-[11px] text-slate-500">Verification Console</div>
-              </button>
-            </div>
-          </div>
-
-          <div class="text-center text-xs text-slate-600 pt-2">
+          <div class="text-center text-xs text-slate-600 pt-2 border-t border-slate-200">
             New candidate?
             <a routerLink="/auth/register" class="text-blue-600 font-semibold hover:underline">Create your eligibility profile</a>
             · <a routerLink="/dashboard" class="text-slate-500 hover:underline">Browse as Guest</a>
@@ -82,12 +65,6 @@ export class LoginComponent {
   password = '';
   loading = signal(false);
   error = signal<string | null>(null);
-
-  fillDemo(email: string, password: string): void {
-    this.email = email;
-    this.password = password;
-    this.submit();
-  }
 
   submit(): void {
     this.error.set(null);
