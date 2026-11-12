@@ -1,0 +1,23 @@
+# Environment & Secrets
+.env
+*.pfx
+*.key
+
+# Build & Publish outputs
+publish/
+**/bin/
+**/obj/
+**/logs/
+**/wwwroot/notifications/*
+!**/wwwroot/notifications/.gitkeep
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+
+# IDE
+.vs/
+.vscode/
+*.user
+*.suo

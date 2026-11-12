@@ -1,0 +1,12 @@
+.env
+.git/
+publish/
+docs/
+frontend/
+deploy/
+**/bin/
+**/obj/
+**/logs/
+backend/tests/
+.vs/
+.vscode/

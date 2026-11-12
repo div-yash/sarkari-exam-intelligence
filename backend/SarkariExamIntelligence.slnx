@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/SarkariExamIntelligence.API/SarkariExamIntelligence.API.csproj" />
+    <Project Path="src/SarkariExamIntelligence.Application/SarkariExamIntelligence.Application.csproj" />
+    <Project Path="src/SarkariExamIntelligence.Domain/SarkariExamIntelligence.Domain.csproj" />
+    <Project Path="src/SarkariExamIntelligence.Infrastructure/SarkariExamIntelligence.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/SarkariExamIntelligence.IntegrationTests/SarkariExamIntelligence.IntegrationTests.csproj" />
+    <Project Path="tests/SarkariExamIntelligence.UnitTests/SarkariExamIntelligence.UnitTests.csproj" />
+    <Project Path="tests/SarkariExamIntelligence.VerificationSuite/SarkariExamIntelligence.VerificationSuite.csproj" />
+  </Folder>
+</Solution>
